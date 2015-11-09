@@ -1,0 +1,136 @@
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="com.tutecentral.BUNK.MainActivity">
+
+        <include
+            android:id="@+id/app_bar"
+            layout="@layout/app_bar"></include>
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/app_bar"
+            android:layout_centerHorizontal="true"
+            android:background="#457992"
+            android:capitalize="words"
+            android:paddingLeft="10dp"
+            android:text="Subject Name"
+            android:textColor="#FFFFFF"
+            android:textSize="28dp"
+            android:textStyle="italic|bold" />
+
+        <EditText
+            android:id="@+id/editText"
+
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/textView2"
+            android:capitalize="words"
+            android:lines="1"
+            android:paddingLeft="10dp"
+            android:scrollHorizontally="true"
+            android:singleLine="true"
+            android:textSize="25dp"
+            android:textStyle="bold|italic" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/editText"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:background="#457992"
+            android:capitalize="words"
+            android:paddingLeft="10dp"
+            android:text="Total Lectures"
+            android:textColor="#FFFFFF"
+            android:textSize="28dp"
+            android:textStyle="italic|bold" />
+
+        <EditText
+            android:id="@+id/editText2"
+            android:layout_width="fill_parent"
+
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/textView3"
+            android:capitalize="words"
+            android:inputType="numberDecimal"
+            android:lines="1"
+            android:paddingLeft="10dp"
+            android:scrollHorizontally="true"
+            android:singleLine="true"
+            android:textSize="25dp"
+            android:textStyle="bold|italic" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/editText2"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:background="#457992"
+            android:capitalize="words"
+            android:paddingLeft="10dp"
+            android:text="Lectures Attended"
+            android:textColor="#FFFFFF"
+            android:textSize="28dp"
+            android:textStyle="italic|bold" />
+
+        <EditText
+            android:id="@+id/editText3"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView4"
+            android:capitalize="words"
+            android:inputType="numberDecimal"
+            android:lines="1"
+            android:paddingLeft="10dp"
+            android:scrollHorizontally="true"
+            android:singleLine="true"
+            android:textSize="25dp"
+            android:textStyle="bold|italic" />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/editText3"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="91dp"
+            android:background="#dc80ae"
+            android:onClick="addsubject"
+            android:padding="10dp"
+            android:text="Add The Subject"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold" />
+
+
+    </RelativeLayout>
+
+    <fragment
+        android:id="@+id/fragment_navigation_drawer"
+        android:name="com.tutecentral.BUNK.NavigationDrawerFragment"
+        android:layout_width="@dimen/nav_drawer_width"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        app:layout="@layout/fragment_navigation_drawer"
+        tools:layout="@layout/fragment_navigation_drawer"></fragment>
+
+</android.support.v4.widget.DrawerLayout>

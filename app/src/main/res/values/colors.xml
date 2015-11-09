@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="tint">#be65f2</color>
+    <color name="primarycolor">#195395</color>
+    <color name="primarycolordark">#0c9789</color>
+    <color name="accentcolor">#7C4DFF</color>
+    <color name="primarycoloricon">#FFCCBC</color>
+    <color name="colorHighlight">#56c0ce</color>
+    <color name="newin">#00bbd4</color>
+    <color name="color1">#276a63</color>
+</resources>

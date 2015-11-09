@@ -1,0 +1,286 @@
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="com.tutecentral.BUNK.MainActivity">
+
+        <include
+            android:id="@+id/app_bar"
+            layout="@layout/app_bar"></include>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/app_bar">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+                <TextView
+                    android:id="@+id/dep1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:background="#457992"
+                    android:gravity="center"
+                    android:text="Coding Team"
+                    android:textColor="#FFFFFF"
+                    android:textSize="28dp"
+                    android:textStyle="italic|bold" />
+
+                <TextView
+                    android:id="@+id/amit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/dep1"
+                    android:text="Amit Goel"
+                    android:textColor="#4279af"
+                    android:textSize="25dp"
+                    android:textStyle="italic" />
+
+                <View
+                    android:id="@+id/v1"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@id/amit"
+                    android:background="@android:color/darker_gray" />
+
+                <TextView
+                    android:id="@+id/mohit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/v1"
+                    android:text="Mohit Yadav"
+                    android:textColor="#4279af"
+                    android:textSize="25dp"
+                    android:textStyle="italic" />
+
+                <View
+                    android:id="@+id/v2"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@id/mohit"
+                    android:background="@android:color/darker_gray" />
+
+                <TextView
+                    android:id="@+id/kuldeep"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/v2"
+                    android:text="Kuldeep Kumar"
+                    android:textColor="#4279af"
+                    android:textSize="25dp"
+                    android:textStyle="italic" />
+
+                <View
+                    android:id="@+id/v3"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@id/kuldeep"
+                    android:background="@android:color/darker_gray" />
+
+                <TextView
+                    android:id="@+id/vishal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/v3"
+                    android:text="Vishal Deep Gupta"
+                    android:textColor="#4279af"
+                    android:textSize="25dp"
+                    android:textStyle="italic" />
+
+                <TextView
+                    android:id="@+id/dep2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/vishal"
+                    android:layout_centerHorizontal="true"
+                    android:background="#457992"
+                    android:gravity="center"
+                    android:text="Testing Team"
+                    android:textColor="#FFFFFF"
+                    android:textSize="28dp"
+                    android:textStyle="italic|bold" />
+
+                <TextView
+                    android:id="@+id/hemant"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/dep2"
+                    android:text="Hemant Yadav"
+                    android:textColor="#4279af"
+                    android:textSize="25dp"
+                    android:textStyle="italic" />
+
+                <View
+                    android:id="@+id/v4"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@id/hemant"
+                    android:background="@android:color/darker_gray" />
+
+                <TextView
+                    android:id="@+id/akshay"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/v4"
+                    android:text="Akshay Raj Saxena"
+                    android:textColor="#4279af"
+                    android:textSize="25dp"
+                    android:textStyle="italic" />
+
+                <View
+                    android:id="@+id/v5"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@id/akshay"
+                    android:background="@android:color/darker_gray" />
+
+                <TextView
+                    android:id="@+id/prashant"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/v5"
+                    android:text="Prashant"
+                    android:textColor="#4279af"
+                    android:textSize="25dp"
+                    android:textStyle="italic" />
+
+                <TextView
+                    android:id="@+id/dep3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/prashant"
+                    android:layout_centerHorizontal="true"
+                    android:background="#457992"
+                    android:gravity="center"
+                    android:text="Designing Team"
+                    android:textColor="#FFFFFF"
+                    android:textSize="28dp"
+                    android:textStyle="italic|bold" />
+
+                <TextView
+                    android:id="@+id/shatru"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/dep3"
+                    android:text="Shatru Pratap"
+                    android:textColor="#4279af"
+                    android:textSize="25dp"
+                    android:textStyle="italic" />
+
+                <View
+                    android:id="@+id/v6"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@id/shatru"
+                    android:background="@android:color/darker_gray" />
+
+                <TextView
+                    android:id="@+id/devyani"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/v6"
+                    android:text="Devyani Varma"
+                    android:textColor="#4279af"
+                    android:textSize="25dp"
+                    android:textStyle="italic" />
+
+                <View
+                    android:id="@+id/v7"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@id/devyani"
+                    android:background="@android:color/darker_gray" />
+
+                <TextView
+                    android:id="@+id/abhishek"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/v7"
+                    android:text="Abhishek Gautam"
+                    android:textColor="#4279af"
+                    android:textSize="25dp"
+                    android:textStyle="italic" />
+
+                <TextView
+                    android:id="@+id/dep4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/abhishek"
+                    android:layout_centerHorizontal="true"
+                    android:background="#457992"
+                    android:gravity="center"
+                    android:text="Requirements Team"
+                    android:textColor="#FFFFFF"
+                    android:textSize="28dp"
+                    android:textStyle="italic|bold" />
+
+                <TextView
+                    android:id="@+id/shubham"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/dep4"
+                    android:text="Shubham Jodha"
+                    android:textColor="#4279af"
+                    android:textSize="25dp"
+                    android:textStyle="italic" />
+
+                <View
+                    android:id="@+id/v8"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@id/shubham"
+                    android:background="@android:color/darker_gray" />
+
+                <TextView
+                    android:id="@+id/divyani"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/v8"
+                    android:text="Divyani patre"
+                    android:textColor="#4279af"
+                    android:textSize="25dp"
+                    android:textStyle="italic" />
+
+                <View
+                    android:id="@+id/v9"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@id/divyani"
+                    android:background="@android:color/darker_gray" />
+
+                <TextView
+                    android:id="@+id/aayush"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/v9"
+                    android:text="Aayush Raj"
+                    android:textColor="#4279af"
+                    android:textSize="25dp"
+                    android:textStyle="italic" />
+
+            </RelativeLayout>
+        </ScrollView>
+    </RelativeLayout>
+
+    <fragment
+        android:id="@+id/fragment_navigation_drawer"
+        android:name="com.tutecentral.BUNK.NavigationDrawerFragment"
+        android:layout_width="@dimen/nav_drawer_width"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        app:layout="@layout/fragment_navigation_drawer"
+        tools:layout="@layout/fragment_navigation_drawer"></fragment>
+
+</android.support.v4.widget.DrawerLayout>

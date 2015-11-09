@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableRow xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/LinearLayoutRow"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/sched_new">
+
+    <RelativeLayout
+        android:id="@+id/rlayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <TextView
+            android:id="@+id/heading"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:background="#457992"
+            android:gravity="center"
+            android:textColor="#FFFFFF"
+            android:textSize="28dp"
+            android:textStyle="italic|bold" />
+
+        <RadioGroup
+            android:id="@+id/myRadio"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/heading"
+            android:checkedButton="@+id/rdbtn">
+
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Attended" />
+
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Not Attended                                                                           " />
+
+            <RadioButton
+                android:id="@+id/rdbtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="No Class" />
+        </RadioGroup>
+    </RelativeLayout>
+</TableRow>
