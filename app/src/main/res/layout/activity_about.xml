@@ -4,8 +4,8 @@
     android:id="@+id/drawer_layout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"
-    android:background="@drawable/back">
+    android:background="@drawable/back"
+    tools:context=".MainActivity">
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -15,13 +15,64 @@
         <include
             android:id="@+id/app_bar"
             layout="@layout/app_bar"></include>
-        <TextView
-            android:id="@+id/datadata"
-            android:layout_below="@+id/app_bar"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="About"/>
 
+        <ScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_below="@id/app_bar">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/abcd"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:gravity="center"
+                    android:text="Description"
+                    android:textSize="40dp"
+                    android:textStyle="bold|italic" />
+
+                <TextView
+                    android:textStyle="italic"
+                    android:textSize="15dp"
+                    android:layout_below="@+id/abcd"
+                    android:id="@+id/abcd2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:gravity="center"
+                    android:padding="20dp"
+                    android:text="It is an app that helps students manage their attendence record and provide information regarding the number of bunks that they can take for a particular subject in order to be safe and have a minimum of fixed percentage that can also be set by the user under percentage tab." />
+
+                <TextView
+                    android:id="@+id/abcd3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/abcd2"
+                    android:layout_centerHorizontal="true"
+                    android:gravity="center"
+                    android:text="Instructions"
+                    android:textSize="40dp"
+                    android:textStyle="bold|italic" />
+
+                <TextView
+                    android:textStyle="italic"
+                    android:textSize="15dp"
+                    android:layout_below="@+id/abcd3"
+                    android:id="@+id/abcd4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:gravity="center"
+                    android:padding="20dp"
+                    android:text="First off all you need to add all those subjects that you are having this semester in the subjcts tab and if it is not the start of the semester then you can also set the classes that you have attended currently and we will maintain the record further on.\n\nAfter adding the subjects go to the percentage tab and set the minimum amount of percentage that you require in order to be safe.\n\nThats all Guys... you are done\n\nNow you just need to update the info every day when you attend the class....for that go to the schedule tab and select Attended/Not Attended/No Class(if their is no class today) for the respective subjects and the info will be updated automatically in your Dashboard.
+                     " />
+
+            </RelativeLayout>
+        </ScrollView>
     </RelativeLayout>
 
     <fragment

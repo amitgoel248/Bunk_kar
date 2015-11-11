@@ -174,7 +174,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_below="@id/dep3"
-                    android:text="Shatru Pratap"
+                    android:text="Satyarudra Pratap"
                     android:textColor="#4279af"
                     android:textSize="25dp"
                     android:textStyle="italic" />

@@ -18,7 +18,7 @@ public class about extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_about);
         myhelper = new MyDatabaseAdapter(this);
-        tv = (TextView)findViewById(R.id.datadata);
+        //tv = (TextView)findViewById(R.id.datadata);
         toolbar =(android.support.v7.widget.Toolbar) findViewById(R.id.app_bar);
         setSupportActionBar(toolbar);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
